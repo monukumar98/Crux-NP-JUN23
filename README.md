@@ -1,4 +1,4 @@
-Java divides the   into the following groups:
+Java divides the   into the following groups:<br>
 	• Arithmetic operators<br>
 	• Assignment operators<br>
 	• Comparison operators<br>
@@ -16,36 +16,17 @@ ADVERTISEMENT
 Java Assignment Operators<br>
 Assignment operators are used to assign values to variables.<br>
 
-A list of all assignment operators:
-Operator	Example	Same As	Try it
-=	x = 5	x = 5	Try it »
-+=	x += 3	x = x + 3	Try it »
--=	x -= 3	x = x - 3	Try it »
-*=	x *= 3	x = x * 3	Try it »
-/=	x /= 3	x = x / 3	Try it »
-%=	x %= 3	x = x % 3	Try it »
-&=	x &= 3	x = x & 3	Try it »
-|=	x |= 3	x = x | 3	Try it »
-^=	x ^= 3	x = x ^ 3	Try it »
->>=	x >>= 3	x = x >> 3	Try it »
-<<=	x <<= 3	x = x << 3	Try it »
+A list of all assignment operators:<br>
+
+![image](https://github.com/monukumar98/Crux-NP-JUN23/assets/47425081/00c10745-2757-46b9-a924-e7475d1d2e03)
 
 Java Comparison Operators<br>
 Comparison operators are used to compare two values:<br>
-Operator	Name	Example	Try it
-==	Equal to	x == y	Try it »
-!=	Not equal	x != y	Try it »
->	Greater than	x > y	Try it »
-<	Less than	x < y	Try it »
->=	Greater than or equal to	x >= y	Try it »
-<=	Less than or equal to	x <= y	Try it »
+
 ![image](https://github.com/monukumar98/Crux-NP-JUN23/assets/47425081/d12be17e-004d-413e-9bcf-f44fdfe9e71e)
 
 
 Java Logical Operators<br>
 Logical operators are used to determine the logic between variables or values:<br>
-Operator	Name	Description	Example	Try it
-&& 	Logical and	Returns true if both statements are true	x < 5 &&  x < 10	Try it »
-|| 	Logical or	Returns true if one of the statements is true	x < 5 || x < 4	Try it »
-!	Logical not	Reverse the result, returns false if the result is true	!(x < 5 && x < 10)	Try it »
+
 ![image](https://github.com/monukumar98/Crux-NP-JUN23/assets/47425081/2b26b105-12a6-44d9-8fff-28926d152051)
