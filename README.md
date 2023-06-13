@@ -1,5 +1,5 @@
 Java divides the   into the following groups:
-	• Arithmetic operators
+	• Arithmetic operators<br>
 	• Assignment operators
 	• Comparison operators
 	• Logical operators
