@@ -15,14 +15,7 @@ ADVERTISEMENT
 
 Java Assignment Operators<br>
 Assignment operators are used to assign values to variables.<br>
-In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:<br>
-Example
-intx =10;
-Try it Yourself »
-The addition assignment operator (+=) adds a value to a variable:
-Example
-intx =10;x +=5;
-Try it Yourself »
+
 A list of all assignment operators:
 Operator	Example	Same As	Try it
 =	x = 5	x = 5	Try it »
