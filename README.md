@@ -1,13 +1,13 @@
 Java divides the   into the following groups:
 	• Arithmetic operators<br>
-	• Assignment operators
-	• Comparison operators
-	• Logical operators
-	• Bitwise operators
+	• Assignment operators<br>
+	• Comparison operators<br>
+	• Logical operators<br>
+	• Bitwise operators<br>
 
-Arithmetic Operators
-Arithmetic operators are used to perform common mathematical operations.
-Operator	Name	Description	Example	Try it
+Arithmetic Operators<br>
+Arithmetic operators are used to perform common mathematical operations.<br>
+Operator	Name	Description	Example	Try it<br>
 +	Addition	Adds together two values	x + y	Try it »
 -	Subtraction	Subtracts one value from another	x - y	Try it »
 *	Multiplication	Multiplies two values	x * y	Try it »
@@ -18,9 +18,9 @@ Operator	Name	Description	Example	Try it
 
 ADVERTISEMENT
 
-Java Assignment Operators
-Assignment operators are used to assign values to variables.
-In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:
+Java Assignment Operators<br>
+Assignment operators are used to assign values to variables.<br>
+In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:<br>
 Example
 intx =10;
 Try it Yourself »
@@ -42,8 +42,8 @@ Operator	Example	Same As	Try it
 >>=	x >>= 3	x = x >> 3	Try it »
 <<=	x <<= 3	x = x << 3	Try it »
 
-Java Comparison Operators
-Comparison operators are used to compare two values:
+Java Comparison Operators<br>
+Comparison operators are used to compare two values:<br>
 Operator	Name	Example	Try it
 ==	Equal to	x == y	Try it »
 !=	Not equal	x != y	Try it »
@@ -54,8 +54,8 @@ Operator	Name	Example	Try it
 ![image](https://github.com/monukumar98/Crux-NP-JUN23/assets/47425081/d12be17e-004d-413e-9bcf-f44fdfe9e71e)
 
 
-Java Logical Operators
-Logical operators are used to determine the logic between variables or values:
+Java Logical Operators<br>
+Logical operators are used to determine the logic between variables or values:<br>
 Operator	Name	Description	Example	Try it
 && 	Logical and	Returns true if both statements are true	x < 5 &&  x < 10	Try it »
 || 	Logical or	Returns true if one of the statements is true	x < 5 || x < 4	Try it »
