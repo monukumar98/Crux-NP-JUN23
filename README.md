@@ -7,7 +7,7 @@ Java divides the   into the following groups:
 
 Arithmetic Operators<br>
 Arithmetic operators are used to perform common mathematical operations.<br>
-Operator	Name	Description	Example	Try it<br>
+Operator	Name	Description	Example	Try it
 +	Addition	Adds together two values	x + y	Try it »
 -	Subtraction	Subtracts one value from another	x - y	Try it »
 *	Multiplication	Multiplies two values	x * y	Try it »
@@ -15,6 +15,8 @@ Operator	Name	Description	Example	Try it<br>
 %	Modulus	Returns the division remainder	x % y	Try it »
 ++	Increment	Increases the value of a variable by 1	++x	Try it »
 -- 	Decrement	Decreases the value of a variable by 1	--x	Try it »
+![image](https://github.com/monukumar98/Crux-NP-JUN23/assets/47425081/c4d3e753-765b-40a6-8f0f-b813a21c95f7)
+
 
 ADVERTISEMENT
 
