@@ -6,6 +6,7 @@ public class Float_double {
 		// TODO Auto-generated method stub
 		double d = 7.8;
 		float f = 7.6f;
+		long l = (long) (d);
 
 	}
 

@@ -8,7 +8,7 @@ public class For_loop {
 //			System.out.println(b);
 //		}
 		
-//		for (byte b = 0; b <= 127; b++) {
+//		for (byte b = 0; b <= 127; b++) {//b= (byte)(b+1
 //			System.out.println(b);
 //		}
 		for (byte b = 0; b < 127; b++) {
