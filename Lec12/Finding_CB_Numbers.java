@@ -9,18 +9,27 @@ public class Finding_CB_Numbers {
 //		long ll = Long.parseLong(s);//
 		System.out.println(CountCBnumber(s));
 	}
+
 	public static int CountCBnumber(String s) {
 		int count = 0;
+		boolean[] visited = new boolean[s.length()];
 		for (int len = 1; len <= s.length(); len++) {
 			for (int j = len; j <= s.length(); j++) {
 				int i = j - len;
 				String s1 = s.substring(i, j);
-				if (ISCBNumber(Long.parseLong(s1)) == true) {
+				if (ISCBNumber(Long.parseLong(s1)) == true && isvisted(visited, i, j - 1)==true) {
 					count++;
 				}
 			}
 		}
 		return count;
+	}
+
+	public static boolean isvisted(boolean[] visited, int i, int j) {
+		// TODO Auto-generated method stub
+		
+
+		return false;
 	}
 
 	public static boolean ISCBNumber(long num) {
