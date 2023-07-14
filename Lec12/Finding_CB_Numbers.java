@@ -17,8 +17,11 @@ public class Finding_CB_Numbers {
 			for (int j = len; j <= s.length(); j++) {
 				int i = j - len;
 				String s1 = s.substring(i, j);
-				if (ISCBNumber(Long.parseLong(s1)) == true && isvisted(visited, i, j - 1)==true) {
+				if (ISCBNumber(Long.parseLong(s1)) == true && isvisted(visited, i, j - 1) == true) {
 					count++;
+					for (int k = i; k < j; k++) {
+						visited[k] = true;
+					}
 				}
 			}
 		}
@@ -27,9 +30,13 @@ public class Finding_CB_Numbers {
 
 	public static boolean isvisted(boolean[] visited, int i, int j) {
 		// TODO Auto-generated method stub
-		
+		for (int k = i; k <= j; k++) {
+			if (visited[k] == true) {
+				return false;
+			}
+		}
+		return true;
 
-		return false;
 	}
 
 	public static boolean ISCBNumber(long num) {
