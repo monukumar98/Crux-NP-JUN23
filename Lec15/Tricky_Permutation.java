@@ -14,9 +14,18 @@ public class Tricky_Permutation {
 			return;
 		}
 		for (int i = 0; i < ques.length(); i++) {
-			String s1 = ques.substring(0, i);// ith char pehel
-			String s2 = ques.substring(i + 1);// ith char ke baad
-			PrintPermutation(s1 + s2, ans + ques.charAt(i));
+			boolean val = false;
+			for (int j = i + 1; j < ques.length(); j++) {
+				if (ques.charAt(j) == ques.charAt(i)) {
+					val = true;
+					break;
+				}
+			}
+			if (val == false) {
+				String s1 = ques.substring(0, i);// ith char pehel
+				String s2 = ques.substring(i + 1);// ith char ke baad
+				PrintPermutation(s1 + s2, ans + ques.charAt(i));
+			}
 		}
 	}
 }
