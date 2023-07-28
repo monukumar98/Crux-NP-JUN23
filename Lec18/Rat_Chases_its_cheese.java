@@ -38,10 +38,16 @@ public class Rat_Chases_its_cheese {
 		}
 		arr[cr][cc] = 'X';
 		ans[cr][cc] = 1;
-		ratinmaze(arr, cr - 1, cc, ans);// up
-		ratinmaze(arr, cr + 1, cc, ans);// down
-		ratinmaze(arr, cr, cc + 1, ans);// right
-		ratinmaze(arr, cr, cc - 1, ans);// left
+		int[] r = { -1, 1, 0, 0 };
+		int[] c = { 0, 0, 1, -1 };
+		for (int i = 0; i < c.length; i++) {
+			ratinmaze(arr, cr + r[i], cc + c[i], ans);
+		}
+		
+//		ratinmaze(arr, cr - 1, cc, ans);// up
+//		ratinmaze(arr, cr + 1, cc, ans);// down
+//		ratinmaze(arr, cr, cc + 1, ans);// right
+//		ratinmaze(arr, cr, cc - 1, ans);// left
 		arr[cr][cc] = 'O';
 		ans[cr][cc] = 0;
 	}
