@@ -8,6 +8,7 @@ public class Person_Client {
 		Person p1 = new Person();
 		Person p = new Person("Ankit", 22);
 		System.out.println(p.name);
+		p.age=-9;
 		System.out.println(p.age);
 //		Person p1 = new Person();
 //		System.out.println(p1.name);
