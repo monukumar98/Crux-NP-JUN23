@@ -53,12 +53,15 @@ public class LinkedList {
 			size++;
 		}
 	}
+
 	public int getfirst() {
 		return head.data;
 	}
+
 	public int getlast() {
 		return tail.data;
 	}
+
 	public int Getatindex(int k) throws Exception {
 		return getNode(k).data;
 	}
@@ -82,6 +85,53 @@ public class LinkedList {
 		}
 		System.out.println(".");
 
+	}
+
+	public int removeFirst() {
+
+		Node rv = head;
+		if (size == 1) {
+			head = null;
+			tail = null;
+			size--;
+		} else {
+			head = head.next;
+			rv.next = null;
+			size--;
+		}
+		return rv.data;
+	}
+
+	public int removeLast() throws Exception {
+		if (size == 1) {
+			return removeFirst();
+		} else {
+			Node sl = getNode(size - 2);
+			int rv = tail.data;
+			tail = sl;
+			tail.next = null;
+			size--;
+			return rv;
+
+		}
+
+	}
+
+	public int removeAtindex(int k) throws Exception {
+		if (k == 0) {
+			return removeFirst();
+		} else if (k == size - 1) {
+			return removeLast();
+		}
+		else {
+			
+			Node prev=getNode(k-1);
+			Node curr=prev.next;
+			prev.next=curr.next;
+			curr.next=null;
+			size--;
+			return curr.data;
+		}
 	}
 
 }
