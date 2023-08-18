@@ -1,8 +1,8 @@
 package Lec22;
 
 public class Queue {
-	private int[] arr;
-	private int front = 0;
+	protected int[] arr;
+	protected int front = 0;
 	private int size = 0;
 
 	public Queue() {
@@ -35,6 +35,7 @@ public class Queue {
 		arr[idx] = item;
 		size++;
 	}
+
 	public int Dequeue() throws Exception {
 		if (isEmpty()) {
 			throw new Exception("Queue Empty hai");
@@ -44,6 +45,7 @@ public class Queue {
 		size--;
 		return rv;
 	}
+
 	public int Getfront() throws Exception {
 		if (isEmpty()) {
 			throw new Exception("Queue Empty hai");
@@ -51,6 +53,7 @@ public class Queue {
 		int rv = arr[front];
 		return rv;
 	}
+
 	public void Display() {
 		for (int i = 0; i < size; i++) {
 			int idx = (front + i) % arr.length;
