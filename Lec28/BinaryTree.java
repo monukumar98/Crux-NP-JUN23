@@ -1,5 +1,7 @@
 package Lec28;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -74,4 +76,96 @@ public class BinaryTree {
 		return Math.max(nn.val, Math.max(left, right));
 	}
 
+	public boolean find(int item) {
+
+		return find(this.root, item);
+	}
+
+	private boolean find(Node nn, int item) {
+		if (nn == null) {
+			return false;
+		}
+		if (nn.val == item) {
+			return true;
+		}
+		boolean left = find(nn.left, item);
+		boolean right = find(nn.right, item);
+		return left || right;
+
+	}
+
+	public int ht() {
+
+		return ht(this.root);
+	}
+
+	private int ht(Node node) {
+		if (node == null) {
+			return -1;
+		}
+
+		int lh = ht(node.left);
+		int rh = ht(node.right);
+		return Math.max(lh, rh) + 1;
+	}
+
+	public void PreOrder() {
+		PreOrder(this.root);
+		System.out.println();
+	}
+
+	private void PreOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		System.out.print(node.val + " ");
+		PreOrder(node.left);
+		PreOrder(node.right);
+	}
+
+	public void POStOrder() {
+		POStOrder(this.root);
+		System.out.println();
+	}
+
+	private void POStOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		POStOrder(node.left);
+		POStOrder(node.right);
+		System.out.println(node.val + " ");
+	}
+
+	public void INOrder() {
+		INOrder(this.root);
+		System.out.println();
+	}
+
+	private void INOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		INOrder(node.left);
+		System.out.print(node.val + " ");
+		INOrder(node.right);
+	}
+
+	public void LevelOrder() {
+		// LinkedList<Node> q = new LinkedList<>();
+		Queue<Node> q = new LinkedList<>();
+		q.add(root);
+		while (!q.isEmpty()) {
+			Node rv = q.remove();
+			System.out.print(rv.val + " ");
+			if (rv.left != null) {
+				q.add(rv.left);
+			}
+			if (rv.right != null) {
+				q.add(rv.right);
+			}
+
+		}
+		System.out.println();
+	}
 }
